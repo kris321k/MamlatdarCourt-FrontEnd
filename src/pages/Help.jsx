@@ -18,7 +18,8 @@ const Help = () => {
           <ul style={{ marginTop: 10, color: "#163a63" }}>
             <li style={{ margin: "8px 0" }}><strong>How do I file a case?</strong> — Use the 'Register' page to create a new case entry.</li>
             <li style={{ margin: "8px 0" }}><strong>Who can access the dashboard?</strong> — Any logged in user is redirected to the dashboard after login.</li>
-            <li style={{ margin: "8px 0" }}><strong>How do I contact support?</strong> — Use the Contact page to send us a message.</li>
+            <li style={{ margin: "8px 0" }}><strong>How do I contact support?</strong> — Use the support channels listed below to reach us.
+            </li>
           </ul>
 
           <h3 style={{ color: "#103b66", marginTop: 18 }}>Resources</h3>
@@ -29,7 +30,7 @@ const Help = () => {
           </ul>
 
           <p style={{ marginTop: 18, color: "#666" }}>
-            If you need further assistance, please visit the <a href="/contact" style={{ color: "#004aad" }}>Contact</a> page.
+            If you need further assistance, please email support@ecourt.example or call the district office.
           </p>
         </div>
       </div>
