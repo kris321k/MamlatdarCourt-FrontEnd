@@ -1,6 +1,13 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const LoginSection = () => {
+  const navigate = useNavigate();
+
+  const handleLogin = (e) => {
+    e.preventDefault();
+    navigate("/dashboard");
+  };
+
   return (
     <div className="login-section">
       <h2>Sign In</h2>
@@ -33,7 +40,7 @@ const LoginSection = () => {
         <button type="button">Refresh</button>
       </div>
 
-      <button>Login</button>
+      <button onClick={handleLogin}>Login</button>
 
       <div className="login-links">
         <Link to="/register">New User? Register Here</Link>
