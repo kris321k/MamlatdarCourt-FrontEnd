@@ -1,7 +1,9 @@
 import React from "react";
+import { useNavigate } from "react-router-dom"; // Import for navigation
 import Header from "../components/Header";
 
 const Dashboard = () => {
+  const navigate = useNavigate(); // Initialize navigation
   const today = new Date();
   const dateStr = today.toLocaleDateString("en-GB", {
     day: "2-digit",
@@ -26,7 +28,12 @@ const Dashboard = () => {
       <div className="container">
         <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
           <h2 style={{ margin: 0 }}>Court Dashboard</h2>
-          <button className="btn primary" style={{ padding: "8px 14px" }}>
+          {/* Added onClick to navigate to your Admin Cases page */}
+          <button 
+            className="btn primary" 
+            style={{ padding: "8px 14px", cursor: "pointer" }}
+            onClick={() => navigate("/admin/cases")}
+          >
             VIEW ALL CASES
           </button>
         </div>
